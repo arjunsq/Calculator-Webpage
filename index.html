@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Calculator by Arjun K S</title>
+
+   </head>
+	
+   <body>
+      <h1>CALCULATOR</h1>
+      <p>By Arjun K S</p>
+      <form name="cal">
+
+       <table>
+       		<tr>
+       			<td colspan="4"> <input type="text" placeholder="Enter numbers" name="screen" ></input> <td>
+       		
+       		</tr>
+  			<tr>
+    			<th> <button type="button" name="AC" onclick="cal.screen.value=''">AC</button> </th>
+    			<th> <button type="button" name="C" onclick="cal.screen.value=Math.floor((cal.screen.value/10))">C</button> </th>
+    			<th> <button type="button" name="%" onclick="cal.screen.value+='%'">%</button> </th>
+    			<th> <button type="button" name="root" onclick="cal.screen.value=(Math.sqrt(eval(cal.screen.value)))"">&#8730;</button> </th>
+    		</tr>
+    		  			<tr>
+    			<th> <button type="button" name="7" onclick="cal.screen.value+='7'">7</button> </th>
+    			<th> <button type="button" name="8" onclick="cal.screen.value+='8'">8</button> </th>
+    			<th> <button type="button" name="9" onclick="cal.screen.value+='9'" >9</button> </th>
+    			<th> <button type="button" name="/" onclick="cal.screen.value+='/'">/</button> </th>
+    		</tr>
+    		  			<tr>
+    			<th> <button type="button" name="4" onclick="cal.screen.value+='4'">4</button> </th>
+    			<th> <button type="button" name="5" onclick="cal.screen.value+='5'">5</button> </th>
+    			<th> <button type="button" name="6" onclick="cal.screen.value+='6'">6</button> </th>
+    			<th> <button type="button" name="*" onclick="cal.screen.value+='*'">*</button> </th>
+    		</tr>
+    		  			<tr>
+    			<th> <button type="button" name="1" onclick="cal.screen.value+='1'">1</button> </th>
+    			<th> <button type="button" name="2" onclick="cal.screen.value+='2'">2</button> </th>
+    			<th> <button type="button" name="3" onclick="cal.screen.value+='3'">3</button> </th>
+    			<th> <button type="button" name="-" onclick="cal.screen.value+='-'">-</button> </th>
+    		</tr>
+    		  			<tr>
+    			<th> <button type="button" name="0" onclick="cal.screen.value+='0'">0</button> </th>
+    			<th> <button type="button" name="." onclick="cal.screen.value+='.'">.</button> </th>
+    			<th> <button type="button" name="=" onclick="cal.screen.value=eval(cal.screen.value)">=</button> </th>
+    			<th> <button type="button" name="+" onclick="cal.screen.value+='+'">+</button> </th>
+    		</tr>
+
+		</table> 
+
+		</form>
+   </body>
+	
+</html>
